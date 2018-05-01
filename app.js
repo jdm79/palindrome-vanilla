@@ -7,16 +7,16 @@
 // of palindrome upon pressing button
 
 
+const array = []
+const palChecker = () => {
+  let warningMessage, x, y, word
 
-const onClick = () => {
-  let warningMessage
-  let x = document.getElementById("myText").value
-  let array = []
-  let word = x.split("").reverse().join("")
-  if(x == word ) {
-    //console.log(`${x} is a palindrome`)
+  x = document.getElementById("myText").value
+  y = x.toLowerCase()
+  word = y.split("").reverse().join("")
+  if(y == word ) {
     // create an <li> with palindrome
-    //document.getElementById("string").innerHTML = x
+    array.push(x)
     document.getElementById("warning").innerHTML
     = `'${x}' is indeed a palindrome! well done!`
     document.getElementById("myText").value=""
@@ -35,6 +35,7 @@ const onClick = () => {
   } else {
     // color = green
     document.getElementById("warning").style.color = "green";
-
   }
+
+  console.log(array);
 }
