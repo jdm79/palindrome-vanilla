@@ -14,13 +14,18 @@ const palChecker = () => {
   x = document.getElementById("myText").value
   y = x.toLowerCase()
   word = y.split("").reverse().join("")
-  if(y == word ) {
+  if(y == word && x.length >= 2) {
     // create an <li> with palindrome
     array.push(x)
     document.getElementById("warning").innerHTML
     = `'${x}' is indeed a palindrome! well done!`
     document.getElementById("myText").value=""
     warningMessage = true
+  } else if(x.length < 2) {
+    document.getElementById("warning").innerHTML
+    = `please type more than one character...`
+    document.getElementById("myText").value=""
+    warningMessage = false
   } else {
     document.getElementById("warning").innerHTML
     = `sorry, '${x}' is not a palindrome! Try again`
@@ -34,8 +39,14 @@ const palChecker = () => {
 
   } else {
     // color = green
-    document.getElementById("warning").style.color = "green";
+    document.getElementById("warning").style.color = "#73AD21";
   }
 
-  console.log(array);
+  // show array items in ul
+  let i, len, text;
+    for (i = 0, len = array.length, text = ""; i < len; i++) {
+    text += array[i] + "<br>";
+}
+
+document.getElementById("palindromes").innerHTML = text;
 }

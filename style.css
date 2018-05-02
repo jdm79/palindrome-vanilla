@@ -1,7 +1,53 @@
-h1 {
-  color: blue
-}
-
 p {
   color: red
+}
+
+.center {
+    margin:0 auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    background-color: black;
+    color: #73AD21
+}
+
+#heading {
+  margin: auto;
+  text-align: center;
+}
+
+#warning {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#input {
+  margin: auto;
+  text-align: center;
+}
+
+.bottom {
+  margin:0 auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+  background-color: black;
+  color: #73AD21
+}
+
+#list {
+  margin: auto;
+  text-align: center;
+  height: 300px;
+}
+
+#list #list-heading {
+  text-align: center;
+  margin-right: 40px
+}
+
+#palindromes {
+  text-align: center;
+  margin-right: 40px
 }
