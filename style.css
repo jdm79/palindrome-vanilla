@@ -5,8 +5,8 @@ p {
 
 .center {
     margin:0 auto;
-    width: 60%;
-    border: 3px solid #73AD21;
+    width: 20%;
+    border: 1px solid #73AD21;
     padding: 10px;
     background-color: black;
     color: #73AD21
@@ -30,8 +30,8 @@ p {
 
 .bottom {
   margin:0 auto;
-  width: 60%;
-  border: 3px solid #73AD21;
+  width: 20%;
+  border: 1px solid #73AD21;
   padding: 10px;
   background-color: black;
   color: #73AD21
